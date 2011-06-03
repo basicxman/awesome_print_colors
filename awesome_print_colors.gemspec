@@ -12,6 +12,9 @@ Gem::Specification.new do |s|
   s.summary     = "Core colour schemes for Michael Dvorkin's awesome_print"
   s.description = "A collection of colour schemes for Michael Dvorkin's awesome_print.  This codebase is used to separate cruft from the main awesome_print library."
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- spec/*`.split("\n")
+
+  s.add_dependency 'awesome_print'
+  s.add_development_dependency 'rspec'
 end
