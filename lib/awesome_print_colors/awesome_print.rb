@@ -3,15 +3,13 @@ module AwesomePrint
   class Inspector
     
     def merge_options!(options)
-      merge_options_without_themes!
-      
       theme = options[:theme]
-      unless AwesomePrintColors.themes.include? theme
-        return false
+      if AwesomePrintColors.themes.include? theme
+        colors = AwesomePrintColors.themes[theme]
+        @options[:color].merge! colors
       end
 
-      colors = AwesomePrintColors.themes[theme]
-      @options[:color].merge! colors
+      merge_options_without_themes! options
     end
 
   end
