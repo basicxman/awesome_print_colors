@@ -18,4 +18,8 @@ describe "Theme" do
     @s.ai(:theme => :test).should == "\e[1;34m\"Test\"\e[0m"
   end
 
+  it "should apply multiple themes in order" do
+    @s.ai(:theme => [:solarized, :test]).should == "\e[1;34m\"Test\"\e[0m"
+  end
+
 end

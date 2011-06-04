@@ -35,6 +35,8 @@ precedence.
     ap "Test", :theme => :test
     ap "Test", :theme => :test, :color => { :float => :red }
 
+An array can be passed to :theme and these themes will be applied in order.
+
 ### Available Themes
 
     # :test

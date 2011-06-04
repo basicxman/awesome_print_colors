@@ -32,24 +32,7 @@ module AwesomePrintColors
 
   self.themes = {
     :test => {
-      :array      => :white,
-      :bigdecimal => :blue,
-      :class      => :yellow,
-      :date       => :greenish,
-      :falseclass => :red,
-      :fixnum     => :blue,
-      :float      => :blue,
-      :hash       => :pale,
-      :struct     => :pale,
-      :nilclass   => :red,
       :string     => :blue,
-      :symbol     => :cyanish,
-      :time       => :greenish,
-      :trueclass  => :green,
-      :method     => :purpleish,
-      :args       => :pale,
-      :keyword    => :cyan,
-      :variable   => :cyanish
     },
     :default => {
       :array      => :white,
