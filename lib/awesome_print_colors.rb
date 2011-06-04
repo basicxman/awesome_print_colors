@@ -97,4 +97,5 @@ module AwesomePrintColors
   }
 end
 
+require 'awesome_print'
 require 'awesome_print_colors/awesome_print'

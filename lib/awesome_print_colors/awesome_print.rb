@@ -1,7 +1,8 @@
 module AwesomePrint
   
   class Inspector
-    
+
+    alias :merge_options_without_themes! :merge_options!
     def merge_options!(options)
       themes = options[:theme]
       themes = [themes] unless themes.is_a? Array
