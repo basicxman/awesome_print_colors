@@ -40,5 +40,6 @@ precedence.
     # :test
     # :default (default awesome_print theme included here)
     # :solarized (based off Ethan Schoonover's Solarized, http://ethanschoonover.com/solarized)
+    # :sim
 
 ![Solarized Theme](http://andrewhorsman.net/solarized.png)
